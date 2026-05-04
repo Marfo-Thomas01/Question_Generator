@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Question Generator</title>
+    <link rel="stylesheet" href="/static/style.css" >
+  </head>
+  <body>
+    <div class="container">
+      <h1>Question Generator</h1>
+      <form action="/generate" method="post">
+        <div>
+          <label for="subject">Subject</label><br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="eg Applied Electricity"
+            required
+          />
+        </div>
+        <div>
+          <label for="topic">Topic</label>
+          <input
+            type="text"
+            name="topic"
+            id="topic"
+            placeholder="eg Ohm's Law"
+            required
+          />
+        </div>
+        <div>
+          <label for="num_Questions">Number of Question</label>
+          <input
+            type="number"
+            name="num_questions"
+            id="num_questions"
+            min="1"
+            max="20"
+            value="5"
+            required
+          />
+        </div>
+        <button type="submit">Generate Question</button>
+      </form>
+
+     <!-- RESULTS -->
+
+      <p class="footer">Built by Marfo Thomas</p>
+    </div>
+  </body>
+</html>
+
